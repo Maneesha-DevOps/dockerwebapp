@@ -2,7 +2,7 @@ version: "3.9"
 
 services:
   devopsdb:
-    image: gmaneesha/myrepo:db
+    image: gmaneesha/flm-oct:db
     ports:
       - "3306:3306"
     deploy:
@@ -11,7 +11,7 @@ services:
       - mynetwork
 
   application:
-    image: gmaneesha/myrepo:Java
+    image: gmaneesha/flm-oct:javaapp
     ports:
       - "1111:8080"
     deploy:
